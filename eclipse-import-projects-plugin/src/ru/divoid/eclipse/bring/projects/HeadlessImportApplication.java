@@ -13,6 +13,7 @@ public class HeadlessImportApplication implements IApplication {
 
     @Override
     public void stop() {
+    	// no implementation
     }
 
 }
