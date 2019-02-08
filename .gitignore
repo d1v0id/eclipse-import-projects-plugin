@@ -1,5 +1,7 @@
-/.settings
-/target
-/META-INF
-/.classpath
-/.project
+*/.settings
+*/target
+*/bin
+*/features
+*/plugins
+*.jar
+logs.zip
