@@ -3,10 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Import Projects Plugin
 Bundle-SymbolicName: eclipse-import-projects-plugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: ru.divoid.eclipse.bring.projects.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources
-Bundle-RequiredExecutionEnvironment: JavaSE-9
-Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: eclipse-import-projects-plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

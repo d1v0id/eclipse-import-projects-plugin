@@ -1,15 +1,11 @@
-package ru.divoid.eclipse.bring.projects.utils;
+package com.seeq.eclipse.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.equinox.app.IApplicationContext;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
-
-import ru.divoid.eclipse.bring.projects.Activator;
+import org.eclipse.core.runtime.Platform;
 
 public class CommandLine {
 
@@ -27,10 +23,7 @@ public class CommandLine {
 	}
 
 	public void parse() {
-		BundleContext context = Activator.getContext();
-		ServiceReference<?> serviceReference = context.getServiceReference(IApplicationContext.class.getName());
-		IApplicationContext applicationContext = (IApplicationContext) context.getService(serviceReference);
-		String[] args = (String[]) applicationContext.getArguments().get(IApplicationContext.APPLICATION_ARGS);
+		String[] args = Platform.getApplicationArgs();
 		String currentKey = null;
 
 		for (String argument : args) {
@@ -44,7 +37,7 @@ public class CommandLine {
 	}
 
 	public List<String> valuesOf(String option) {
-		return parsedArguments.get(option);
+		return parsedArguments.getOrDefault(option, new ArrayList<>());
 	}
 
 	private boolean isSupportedOption(String argument) {

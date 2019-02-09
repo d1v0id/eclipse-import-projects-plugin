@@ -1,4 +1,4 @@
-package ru.divoid.eclipse.bring.projects;
+package com.seeq.eclipse;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -8,9 +8,9 @@ import java.util.regex.Pattern;
 
 import org.eclipse.ui.IStartup;
 
-import ru.divoid.eclipse.bring.projects.internal.ImportProjects;
-import ru.divoid.eclipse.bring.projects.utils.CommandLine;
-import ru.divoid.eclipse.bring.projects.utils.Log;
+import com.seeq.eclipse.internal.ImportProjects;
+import com.seeq.eclipse.utils.CommandLine;
+import com.seeq.eclipse.utils.Log;
 
 public class Startup implements IStartup {
 

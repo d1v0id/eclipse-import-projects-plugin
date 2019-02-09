@@ -1,4 +1,4 @@
-package ru.divoid.eclipse.bring.projects.internal;
+package com.seeq.eclipse.internal;
 
 import java.util.List;
 import java.io.File;
@@ -10,7 +10,7 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.Path;
 
-import ru.divoid.eclipse.bring.projects.utils.Log;
+import com.seeq.eclipse.utils.Log;
 
 public class ImportProjects {
 
