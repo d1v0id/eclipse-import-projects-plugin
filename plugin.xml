@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-
    <extension point="org.eclipse.ui.startup">
-      <startup class="com.seeq.eclipse.ImportProjects"/>
+      <startup class="com.seeq.eclipse.Startup"/>
    </extension>
    <extension
-       id="headlessimport"
-       name="Headless Import"
+       id="application"
        point="org.eclipse.core.runtime.applications">
-       <application
-           cardinality="singleton-global"
-           thread="main"
-           visible="true">
+       <application>
            <run
-               class="com.seeq.eclipse.HeadlessImportApplication">
+               class="com.seeq.eclipse.Application">
            </run>
        </application>
    </extension>
