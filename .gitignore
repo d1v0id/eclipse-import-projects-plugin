@@ -1,7 +1,2 @@
-*/.settings
-*/target
-*/bin
-*/features
-*/plugins
-*.jar
-logs.zip
+/.settings
+/bin
