@@ -14,10 +14,10 @@ import com.seeq.eclipse.utils.Log;
 
 public class Startup implements IStartup {
 
-	private static final String IMPORT_ARGUMENT = "import";
-	private static final String EXCLUDE_ARGUMENT = "exclude";
+	private static final String IMPORT_ARGUMENT = "import"; //$NON-NLS-1$
+	private static final String EXCLUDE_ARGUMENT = "exclude"; //$NON-NLS-1$
 	private static final String SEARCHING_MESSAGE = "Searching for projects in %s";
-	private static final String PROJECT_PATTERN = "\\.project";
+	private static final String PROJECT_PATTERN = "\\.project"; //$NON-NLS-1$
 
 	private final Log log = new Log();
 

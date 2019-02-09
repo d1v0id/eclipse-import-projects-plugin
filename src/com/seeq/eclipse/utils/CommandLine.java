@@ -9,8 +9,8 @@ import org.eclipse.core.runtime.Platform;
 
 public class CommandLine {
 
-	private static final String OPTION_KEY = "-";
-	private static final String OPTION_KEY_REGEXP = "^" + OPTION_KEY + "[a-z]+$";
+	private static final String OPTION_KEY = "-"; //$NON-NLS-1$
+	private static final String OPTION_KEY_REGEXP = "^" + OPTION_KEY + "[a-z]+$"; //$NON-NLS-1$
 	private static final String UNSUPPORTED_ARGUMENT_MESSAGE = "Error: Unsupported argument: %s";
 
 	private final Log log = new Log();
