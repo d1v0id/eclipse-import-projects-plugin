@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension point="org.eclipse.ui.startup">
-      <startup class="ru.divoid.eclipse.bring.projects.ImportProjects"/>
+      <startup class="ru.divoid.eclipse.bring.projects.Startup"/>
    </extension>
    <extension
        id="headlessimport"
@@ -13,7 +13,7 @@
            thread="main"
            visible="true">
            <run
-               class="ru.divoid.eclipse.bring.projects.HeadlessImportApplication">
+               class="ru.divoid.eclipse.bring.projects.Application">
            </run>
        </application>
    </extension>
