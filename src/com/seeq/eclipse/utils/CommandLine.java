@@ -11,7 +11,7 @@ public class CommandLine {
 
 	private static final String OPTION_KEY = "-";
 	private static final String OPTION_KEY_REGEXP = "^" + OPTION_KEY + "[a-z]+$";
-	private static final String UNSUPPORTED_ARGMENT_MESSAGE = "Error: Unsupported argument: %s";
+	private static final String UNSUPPORTED_ARGUMENT_MESSAGE = "Error: Unsupported argument: %s";
 
 	private final Log log = new Log();
 	private final List<String> options;
@@ -49,7 +49,7 @@ public class CommandLine {
 		boolean contains = options.contains(option);
 
 		if (!contains) {
-			log.info(String.format(UNSUPPORTED_ARGMENT_MESSAGE, option));
+			log.info(String.format(UNSUPPORTED_ARGUMENT_MESSAGE, option));
 		}
 
 		return contains;
