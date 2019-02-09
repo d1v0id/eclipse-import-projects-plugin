@@ -13,7 +13,7 @@ cause Eclipse to recursively search the supplied folder for .project files and i
 the workspace. If they are already present in the workspace, they will be refreshed. The path supplied
 must be an absolute path.
 
-If you want excloude some projects you should use `-exclude <project name>` command line parameter.
+If you want exclude some projects you can use `-exclude <project name>` command line parameter.
 
 You can supply multiple `-import` or `-exclude` directives to import multiple folders or exclude multiple projects from import. E.g. `-import <folder 1> <folder 2> -exclude <project 1> <project 2>`.
 
