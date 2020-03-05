@@ -15,7 +15,7 @@ must be an absolute path.
 
 If you want exclude some projects you can use `-exclude <project name>` command line parameter.
 
-You can supply multiple `-import` or `-exclude` directives to import multiple folders or exclude multiple projects from import. E.g. `-import <folder 1> <folder 2> -exclude <project 1> <project 2>`.
+You can supply multiple `-import` or `-exclude` directives to import multiple folders or exclude multiple projects from import. E.g. `-import <folder 1> -import <folder 2> -exclude <project 1> -exclude <project 2>`.
 
 The plugin will log activity and any errors.
 
