@@ -29,7 +29,10 @@ public class CommandLine {
 		for (String argument : args) {
 			if (isSupportedOption(argument)) {
 				currentKey = argumentToOption(argument);
-				parsedArguments.put(currentKey, new ArrayList<>());
+				
+				if (!parsedArguments.containsKey(currentKey)) {
+					parsedArguments.put(currentKey, new ArrayList<>());
+				}
 			} else if (currentKey != null) {
 				parsedArguments.get(currentKey).add(argument);
 			}
